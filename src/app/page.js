@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-base-200 min-h-screen flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Stock Management</h1>
+        <h1 className="text-4xl font-bold">Man Stock LSM64</h1>
         {/* //input ชื่อผู้ใช้ และ รหัสผ่าน */}
         <input type="text" placeholder="ชื่อผู้ใช้" id="username" className="input input-bordered w-full max-w-xs mt-4" />
         <input type="password" placeholder="พาสเวิร์ด" id='password' className="input input-bordered w-full max-w-xs mt-4" />
