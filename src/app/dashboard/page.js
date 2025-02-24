@@ -30,7 +30,7 @@ export default function Dashboard() {
     return (
         <div className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900">
             {/* Background Image */}
-            <div className="absolute inset-0 bg-[url('/header.png')] bg-cover bg-center blur-md opacity-50"></div>
+            <div className="absolute inset-0 bg-[url('/header.jpg')] bg-cover bg-center blur-md opacity-50"></div>
 
             {/* กล่องเนื้อหา */}
             <div className="relative z-10 bg-gray-800/80 p-8 rounded-2xl shadow-lg flex flex-col items-center">
