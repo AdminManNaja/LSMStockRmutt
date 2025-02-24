@@ -205,7 +205,7 @@ export default function AddStock() {
                                 {/* //แสดงชื่อพนักงาน */}
                                 <p className='pb-4 pt-4'>โดยพนักงาน : {userData?.name}</p>
                                 {/* //ปุ่มเพิ่มสินค้า */}
-                                <button className="btn w-full p-6  btn-active btn-ghost" onClick={() => addStock()}>เพิ่มสินค้า</button>
+                                <button className="btn bg-green-600 hover:bg-green-700 w-full p-6 btn-active btn-ghost" onClick={() => addStock()}>เพิ่มสินค้า</button>
                             </div>
                         </>
 
