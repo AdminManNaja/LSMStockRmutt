@@ -41,19 +41,19 @@ export default function Dashboard() {
                 {/* เช็ค Role ของ User */}
                 {userData.role === 'admin' ? (
                     <>
-                        <button className="btn bg-red-400 hover:bg-red-700 text-white w-2/3 mt-4" onClick={() => router.push('/addstock')}>เพิ่มสินค้า</button>
-                        <button className="btn bg-red-400 hover:bg-red-700 text-white w-2/3 mt-4" onClick={() => router.push('/deletestock')}>เบิกสินค้า</button>
-                        <button className="btn bg-red-400 hover:bg-red-700 text-white w-2/3 mt-4" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
+                        <button className="btn bg-red-500 hover:bg-red-700 text-white w-2/3 mt-4" onClick={() => router.push('/addstock')}>เพิ่มสินค้า</button>
+                        <button className="btn bg-red-500 hover:bg-red-700 text-white w-2/3 mt-4" onClick={() => router.push('/deletestock')}>เบิกสินค้า</button>
+                        <button className="btn bg-red-500 hover:bg-red-700 text-white w-2/3 mt-4" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
                     </>
                 ) : userData.role === 'import' ? (
                     <>
-                        <button className="btn bg-blue-400 hover:bg-blue-700 text-white w-2/3 mt-4" onClick={() => router.push('/addstock')}>เพิ่มสินค้า</button>
-                        <button className="btn bg-blue-400 hover:bg-blue-700 text-white w-2/3 mt-4" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
+                        <button className="btn bg-blue-500 hover:bg-blue-700 text-white w-2/3 mt-4" onClick={() => router.push('/addstock')}>เพิ่มสินค้า</button>
+                        <button className="btn bg-blue-500 hover:bg-blue-700 text-white w-2/3 mt-4" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
                     </>
                 ) : (
                     <>
-                        <button className="btn bg-green-400 hover:bg-green-700 text-white w-2/3 mt-4" onClick={() => router.push('/deletestock')}>เบิกสินค้า</button>
-                        <button className="btn bg-green-400 hover:bg-green-700 text-white w-2/3 mt-4" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
+                        <button className="btn bg-green-500 hover:bg-green-700 text-white w-2/3 mt-4" onClick={() => router.push('/deletestock')}>เบิกสินค้า</button>
+                        <button className="btn bg-green-500 hover:bg-green-700 text-white w-2/3 mt-4" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
                     </>
                 )}
 
