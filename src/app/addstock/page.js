@@ -184,7 +184,13 @@ export default function AddStock() {
                         :
                         <>
                             <div className='pl-4 pr-4 pb-6'>
-                                <button className="btn w-full mt-2 p-6 btn-active btn-ghost" onClick={() => setBtnScan('Y')}>Scan</button>
+                            <div className="flex justify-end w-full">
+                            <button 
+                                className="btn bg-red-600 hover:bg-red-700 text-white w-auto px-6 py-3 mt-2"
+                                onClick={() => setBtnScan('Y')}>
+                                Scan</button>
+                            </div>
+
                                 {/* //input รหัสสินค้า ปุ่มค้นหา */}
                                 <div className="join p-4 mt-6">
                                     <input type="number" id="search" className="input input-bordered join-item" placeholder="รหัสสินค้า" value={barcode} onChange={(e) => setBarcode(e.target.value)} />
