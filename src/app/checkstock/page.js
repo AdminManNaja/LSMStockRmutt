@@ -96,7 +96,7 @@ export default function CheckStock() {
                   <td>{data[key].product_name}</td>
                   <td>{data[key].product_total}</td>
                   {
-                    data[key].product_total == 0 ? <td>สินค้าหมด</td> : data[key].product_total > 10 ? <td></td> : <td>สินค้าใกล้หมด</td>
+                    data[key].product_total == 0 ? <td className='text-red-500'>สินค้าหมด</td> : data[key].product_total > 5 ? <td className='text-green-500'>สินค้าเพียงพอ</td> : <td className='text-yellow-600'>สินค้าใกล้หมด</td>
                   }
                 </tr>
               ))

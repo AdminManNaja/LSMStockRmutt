@@ -43,16 +43,45 @@ export default function Home() {
   };
 
   //ส่วนของหน้าเว็บ
+  //  <div className="bg-gray-900 min-h-screen flex flex-col items-center justify-center">
   return (
     <>
-      <div className="bg-base-200 min-h-screen flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Man Stock LSM64</h1>
-        {/* //input ชื่อผู้ใช้ และ รหัสผ่าน */}
-        <input type="text" placeholder="ชื่อผู้ใช้" id="username" className="input input-bordered w-full max-w-xs mt-4" />
-        <input type="password" placeholder="พาสเวิร์ด" id='password' className="input input-bordered w-full max-w-xs mt-4" />
-        {/* //button เข้าสู่ระบบ */}
-        <button className="btn  sm:btn-sm md:btn-md lg:btn-lg w-2/3 mt-4 p-6 btn-active btn-ghost" onClick={() => login()}>เข้าสู่ระบบ</button>
+      <div className="relative bg-gray-900 min-h-screen flex flex-col items-center justify-center">
+
+        {/* ภาพพื้นหลังเบลอ */}
+        <div className="absolute inset-0 bg-[url('/lsm.png')] bg-cover bg-center blur-lg"></div>
+
+        {/* กล่อง Login */}
+        <div className="relative z-10 bg-gray-800/80 p-8 rounded-2xl shadow-lg flex flex-col items-center">
+          <h1 className="text-4xl font-bold text-red-50 mb-6">Man Stock LSM64</h1>
+
+          {/* ช่องกรอกชื่อผู้ใช้ */}
+          <input
+            type="text"
+            placeholder="ชื่อผู้ใช้"
+            id="username"
+            className="input input-bordered w-full max-w-xs mt-2 px-4 py-2 rounded-lg text-black"
+          />
+
+          {/* ช่องกรอกรหัสผ่าน */}
+          <input
+            type="password"
+            placeholder="พาสเวิร์ด"
+            id="password"
+            className="input input-bordered w-full max-w-xs mt-4 px-4 py-2 rounded-lg text-black"
+          />
+
+          {/* ปุ่มเข้าสู่ระบบ */}
+          <button
+            className="btn bg-red-600 hover:bg-red-700 text-white w-2/3 mt-6 py-3 rounded-lg font-semibold"
+            onClick={() => login()}
+          >
+            เข้าสู่ระบบ
+          </button>
+        </div>
+
       </div>
+
       {/* //dialog แจ้งเตือน ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง */}
       <dialog id="modal_login" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
