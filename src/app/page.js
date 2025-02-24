@@ -53,14 +53,14 @@ export default function Home() {
 
         {/* กล่อง Login */}
         <div className="relative z-10 bg-gray-800/80 p-8 rounded-2xl shadow-lg flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-red-50 mb-6">Man Stock LSM64</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Man Stock LSM64</h1>
 
           {/* ช่องกรอกชื่อผู้ใช้ */}
           <input
             type="text"
             placeholder="ชื่อผู้ใช้"
             id="username"
-            className="input input-bordered w-full max-w-xs mt-2 px-4 py-2 rounded-lg text-black"
+            className="input input-bordered w-full max-w-xs mt-2 px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-300"
           />
 
           {/* ช่องกรอกรหัสผ่าน */}
@@ -68,7 +68,7 @@ export default function Home() {
             type="password"
             placeholder="พาสเวิร์ด"
             id="password"
-            className="input input-bordered w-full max-w-xs mt-4 px-4 py-2 rounded-lg text-black"
+            className="input input-bordered w-full max-w-xs mt-4 px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-300"
           />
 
           {/* ปุ่มเข้าสู่ระบบ */}
