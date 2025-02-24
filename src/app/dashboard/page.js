@@ -29,7 +29,7 @@ export default function Dashboard() {
     //ส่วนของหน้าเว็บ
     return (
         <div className="bg-base-200 min-h-screen flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold">Stock Management</h1>
+            <h1 className="text-4xl font-bold">LSM 64 Management</h1>
             {
                 //เช็คว่าเป็น admin หรือ import หรือ export หรือไม่
                 userData.role == 'admin' ?
