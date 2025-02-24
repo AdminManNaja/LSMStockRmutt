@@ -28,6 +28,7 @@ export default function Dashboard() {
 
     //ส่วนของหน้าเว็บ
     return (
+        <><div className="absolute inset-0 bg-[url('/header.png')] bg-cover bg-center blur-lg"></div>
         <div className="bg-base-200 min-h-screen flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold">
                 <span className="text-yellow-400">LSM 64</span> <span className="text-white">Management</span>
@@ -48,10 +49,9 @@ export default function Dashboard() {
 
                             <button className="btn  w-2/3 mt-4  btn-active btn-ghost" onClick={() => router.push('/deletestock')}>เบิกสินค้า</button>
                             <button className="btn  w-2/3 mt-4  btn-active btn-ghost" onClick={() => router.push('/checkstock')}>เช็ค Stock</button>
-                        </>
-            }
+                        </>}
             {/* //ปุ่มออกจากระบบ */}
             <button className="btn  w-2/3 mt-8  btn-active btn-ghost" onClick={() => logout()}>ออกจากระบบ</button>
-        </div>
+        </div></>
     );
 }
