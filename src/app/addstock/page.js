@@ -186,7 +186,7 @@ export default function AddStock() {
                             <div className='pl-4 pr-4 pb-6'>
                             <div className="flex justify-end w-full">
                             <button 
-                                className="btn bg-red-600 hover:bg-red-700 text-white w-1/3 px-6 py-3 mt-2"
+                                className="btn bg-red-600 hover:bg-red-700 text-white w-auto px-6 py-3 mt-2"
                                 onClick={() => setBtnScan('Y')}>
                                 Scan</button>
                             </div>
