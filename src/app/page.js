@@ -53,7 +53,7 @@ export default function Home() {
 
         {/* กล่อง Login */}
         <div className="relative z-10 bg-gray-800/80 p-8 rounded-2xl shadow-lg flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-white mb-6">Man Stock LSM64</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Project Stock LSM64</h1>
 
           {/* ช่องกรอกชื่อผู้ใช้ */}
           <input
