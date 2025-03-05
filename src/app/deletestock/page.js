@@ -224,7 +224,7 @@ export default function DeleteStock() {
                                 </div>
                                 <p className='pb-4 pt-4'>โดยพนักงาน : {userData?.name}</p>
 
-                                <button className="btn btn-active btn-ghost w-full" onClick={() => delStock()}>เบิกสินค้า</button>
+                                <button className="btn bg-green-600 hover:bg-green-700 w-full p-6 btn-active btn-ghost" onClick={() => delStock()}>เบิกสินค้า</button>
                             </div>
                         </>
 
