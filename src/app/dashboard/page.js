@@ -35,7 +35,7 @@ export default function Dashboard() {
             {/* กล่องเนื้อหา */}
             <div className="relative z-10 bg-gray-800/80 p-8 rounded-2xl shadow-lg flex flex-col items-center">
                 <h1 className="text-4xl font-bold">
-                    <span className="text-yellow-400">LSM 64</span> <span className="text-white">Management</span>
+                    <span className="text-yellow-400">NamPak</span> <span className="text-white">Management</span>
                 </h1>
 
                 {/* เช็ค Role ของ User */}
